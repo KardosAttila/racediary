@@ -15,7 +15,7 @@ public class RunController {
         this.runRepository = runRepository;
     }
 
-    @GetMapping("/api/get")
+    @GetMapping("/api/runs/get")
     public List<RunningRecords> getAll() {
         return runRepository.findAll();
     }
